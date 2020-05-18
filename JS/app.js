@@ -29,17 +29,14 @@ var Seattle = {
         var container = document.getElementById('container');
         var shpName = document.createElement('p')
         shpName.textContent = this.location;
+        container.appendChild(shpName);
         var ulE1 = document.createElement('ul');
+        container.appendChild(ulE1);
         for (var i = 0; i < workHours.length; i++) {
-            var hourName = document.createElement('p');
-            hourName.textContent = workHours[i];
+            var hourName = document.createElement('li');
+            hourName.textContent = `${workHours[i]} ${this.purchaces[i]} `;
+            ulE1.appendChild(hourName);
         }
-        for (var i = 0; i < workHours.length; i++) {
-            var liP = document.createElement('li');
-            liP.textContent = this.purchaces[i];
-            ulE1.appendChild(liP);
-        }
-        // container.appendChild(ulE1);
     }
 }
 Seattle.step1();
@@ -71,12 +68,16 @@ var Tokyo = {
         // console.log(this.purchaces);
     },
     render: function () {
-        var container = document.getElementById('container')
-        var ulE1 = document.createElement('ul')
+        var container = document.getElementById('container');
+        var shpName = document.createElement('p')
+        shpName.textContent = this.location;
+        container.appendChild(shpName);
+        var ulE1 = document.createElement('ul');
+        container.appendChild(ulE1);
         for (var i = 0; i < workHours.length; i++) {
-            var liP = document.createElement('li');
-            liP.textContent = this.purchaces[i];
-            ulE1.appendChild(liP);
+            var hourName = document.createElement('li');
+            hourName.textContent = `${workHours[i]} ${this.purchaces[i]} `;
+            ulE1.appendChild(hourName);
         }
     }
 }
@@ -107,11 +108,15 @@ var Dubai = {
     },
     render: function () {
         var container = document.getElementById('container');
+        var shpName = document.createElement('p')
+        shpName.textContent = this.location;
+        container.appendChild(shpName);
         var ulE1 = document.createElement('ul');
+        container.appendChild(ulE1);
         for (var i = 0; i < workHours.length; i++) {
-            var liP = document.createElement('li');
-            liP.textContent = this.purchaces[i];
-            ulE1.appendChild(liP);
+            var hourName = document.createElement('li');
+            hourName.textContent = `${workHours[i]} ${this.purchaces[i]} `;
+            ulE1.appendChild(hourName);
         }
     }
 }
@@ -120,7 +125,7 @@ Dubai.step2();
 Dubai.render();
 // -------------------------
 var Paris = {
-    location: `{Paris}`,
+    location: `Paris`,
     Minc: 20,
     Maxc: 38,
     AvgSal: 2.3,
@@ -142,11 +147,15 @@ var Paris = {
     },
     render: function () {
         var container = document.getElementById('container');
+        var shpName = document.createElement('p')
+        shpName.textContent = this.location;
+        container.appendChild(shpName);
         var ulE1 = document.createElement('ul');
+        container.appendChild(ulE1);
         for (var i = 0; i < workHours.length; i++) {
-            var liP = document.createElement('li');
-            liP.textContent = this.purchaces[i];
-            ulE1.appendChild(liP);
+            var hourName = document.createElement('li');
+            hourName.textContent = `${workHours[i]} ${this.purchaces[i]} `;
+            ulE1.appendChild(hourName);
         }
     }
 
@@ -178,11 +187,15 @@ var Lima = {
     },
     render: function () {
         var container = document.getElementById('container');
+        var shpName = document.createElement('p')
+        shpName.textContent = this.location;
+        container.appendChild(shpName);
         var ulE1 = document.createElement('ul');
+        container.appendChild(ulE1);
         for (var i = 0; i < workHours.length; i++) {
-            var liP = document.createElement('li');
-            liP.textContent = this.purchaces[i];
-            ulE1.appendChild(liP);
+            var hourName = document.createElement('li');
+            hourName.textContent = `${workHours[i]} ${this.purchaces[i]} `;
+            ulE1.appendChild(hourName);
         }
     }
 }

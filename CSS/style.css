@@ -9,9 +9,13 @@ h1 {
     font-style: italic;
     margin: 40px;
    
-    padding: 50px 50px 50px 50px;
+    padding: 50px 50px 50px 50px;   
     background-color: brown;
     color: #ffff00cc;
+}
+h2 {
+    color: rgb(204, 231, 50);
+    background-color: brown;
 }
 nav ul {
     font-size: larger;

@@ -27,7 +27,7 @@ var Seattle = {
     },
     render: function () {
         var container = document.getElementById('container');
-        var shpName = document.createElement('p')
+        var shpName = document.createElement('h2')
         shpName.textContent = this.location;
         container.appendChild(shpName);
         var ulE1 = document.createElement('ul');
@@ -69,7 +69,7 @@ var Tokyo = {
     },
     render: function () {
         var container = document.getElementById('container');
-        var shpName = document.createElement('p')
+        var shpName = document.createElement('h2')
         shpName.textContent = this.location;
         container.appendChild(shpName);
         var ulE1 = document.createElement('ul');
@@ -108,7 +108,7 @@ var Dubai = {
     },
     render: function () {
         var container = document.getElementById('container');
-        var shpName = document.createElement('p')
+        var shpName = document.createElement('h2')
         shpName.textContent = this.location;
         container.appendChild(shpName);
         var ulE1 = document.createElement('ul');
@@ -147,7 +147,7 @@ var Paris = {
     },
     render: function () {
         var container = document.getElementById('container');
-        var shpName = document.createElement('p')
+        var shpName = document.createElement('h2')
         shpName.textContent = this.location;
         container.appendChild(shpName);
         var ulE1 = document.createElement('ul');
@@ -187,7 +187,7 @@ var Lima = {
     },
     render: function () {
         var container = document.getElementById('container');
-        var shpName = document.createElement('p')
+        var shpName = document.createElement('h2')
         shpName.textContent = this.location;
         container.appendChild(shpName);
         var ulE1 = document.createElement('ul');

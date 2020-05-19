@@ -1,7 +1,10 @@
-img.fish {
-    margin: 50px;
-    padding: 50px;
-    background-color: darkgray;
+header img {
+    margin: 10  px;
+    padding: 10px;
+    background-color:#ffff00cc;
+    border: 1px solid rgb(228, 22, 22);
+    width: 1000px;
+    height: 300px  ;
 }
 
 h1 {
@@ -17,6 +20,15 @@ h2 {
     color: rgb(204, 231, 50);
     background-color: brown;
 }
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin: 40px;
+   
+    padding: 50px 50px 50px 50px;   
+    background-color: brown;
+    color: #ffff00cc;
+}
 nav ul {
     font-size: larger;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -26,3 +38,28 @@ nav ul {
     padding: 50px;
     margin: 50px;
 }
+
+table, tr, td { 
+    margin: auto;
+    padding: 15px;
+
+    background-color: rgb(226, 188, 90);
+    border: brown;
+    border: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+li { 
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(226, 188, 90);
+    border: brown;
+    border: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3 img {
+    width: 20px;
+    height: 20px;
+
+}
+
+

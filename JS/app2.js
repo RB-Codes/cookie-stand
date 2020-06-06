@@ -29,40 +29,42 @@ function getRandomCsuto(min, max) {
 }
 // -------------
 var Seattle = new Branch('Seattle', 23, 63, 6.3);
-var Tokyo = new Branch('Tokyo', 2, 24, 1.2);
-var Dubai = new Branch('Dubai', 11, 38, 3.7);
-var Paris = new Branch('Paris', 20, 38, 2.3);
-var Lima = new Branch('Lima', 2, 16, 4.6);
+var Tokyo = new Branch('Tokyo',     2, 24, 1.2);
+var Dubai = new Branch('Dubai',     11, 38, 3.7);
+var Paris = new Branch('Paris',     20, 38, 2.3);
+var Lima = new Branch('Lima',       2, 16, 4.6);
+var Totals = new Branch ('Totals' , 11, 35, 25)
 Seattle.Tijara();
 Tokyo.Tijara();
 Dubai.Tijara();
 Paris.Tijara();
 Lima.Tijara();
+Totals.Tijara();
 // ------------------
 var container = document.getElementById('container');
 var jadwal = document.createElement('table');
 container.appendChild(jadwal);
 var maqlab = document.createElement('td')
-jadwal.appendChild(maqlab)
-maqlab.textContent=null
+jadwal.appendChild(maqlab);
+maqlab.textContent=null;
 for (var i = 0; i < workHours.length; i++) {
     var saaa = document.createElement('td')
     jadwal.appendChild(saaa);
-    saaa.textContent = workHours[i]
+    saaa.textContent = workHours[i];
 }
 for (var j = 0; j < branches.length; j++) {
-    var ssaf = document.createElement('tr')
+    var ssaf = document.createElement('tr');
     jadwal.appendChild(ssaf);
     var muraba = document.createElement('td');
     ssaf.appendChild(muraba);
-    muraba.textContent = branches[j].location
+    muraba.textContent = branches[j].location;
     for (var i = 0; i < workHours.length; i++) {
         var muraba = document.createElement('td');
         ssaf.appendChild(muraba);
-        muraba.textContent = branches[j].purchaces[i]
+        muraba.textContent = branches[j].purchaces[i];
         // Nested loop omg wow oh my god
     }
     var muraba = document.createElement('td');
     ssaf.appendChild(muraba);
-    muraba.textContent = branches[j].total
+    muraba.textContent = branches[j].total;
 }
